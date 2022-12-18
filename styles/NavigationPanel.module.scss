@@ -1,0 +1,26 @@
+@mixin container-common {
+    position: fixed;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+.container {
+    &--dark {
+        @include container-common;
+        background-color: var(--nav-container-dark);
+        color:var(--text-dark)
+    }
+
+    &--light {
+        @include container-common;
+        background-color: var(--nav-container-light);
+        color:var(--text-light)
+    }
+}
+
+.link {
+    padding: 0 .5rem;
+}
+

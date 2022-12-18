@@ -1,0 +1,5 @@
+export const HIGHLIGHT_COLOR = ''
+export const BODY_DARK = ''
+export const BODY_LIGHT = ''
+export const TEXT_DARK = ''
+export const TEXT_LIGHT = ''

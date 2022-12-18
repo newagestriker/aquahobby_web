@@ -1,0 +1,31 @@
+.slider {
+    position: absolute;
+    background-color: var(--pop);
+    display: inline-block;
+    border-radius: 30px;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: .5s;
+
+}
+
+.checkbox {
+    display: none;
+
+    &:checked {
+        &+.slider {
+            transition: .5s;
+            transform: translateX(1.8rem);
+        }
+    }
+}
+
+.switch {
+    margin:0 .5rem;
+    position: relative;
+    display: inline-block;
+    height: 1.2rem;
+    width: 3rem;
+    background-color: var(--dark);
+    border-radius: 30px;
+}
